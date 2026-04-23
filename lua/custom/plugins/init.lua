@@ -49,4 +49,6 @@ return {
       end,
     },
   },
+  -- Git commands integrations
+  { 'tpope/vim-fugitive' },
 }
