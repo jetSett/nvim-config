@@ -228,6 +228,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- Personal keymaps
 
+vim.keymap.set('i', ',,', '<Esc>')
+vim.keymap.set('v', ',,', '<Esc>')
+
 vim.keymap.set('n', '<leader>,', ':w<cr>', { desc = 'Save buffer' })
 vim.keymap.set('n', '<leader>Q', ':qa<cr>', { desc = 'Quit now' })
 vim.keymap.set('n', '<leader>qq', ':q<cr>', { desc = 'Close buffer' })
