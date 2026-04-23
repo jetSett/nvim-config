@@ -1,0 +1,47 @@
+{
+    "Frame": {
+        "prefix": "frame",
+        "body": [
+            "\\begin{frame}{$1}",
+            "\t\t$2",
+            "\\end{frame}",
+            "$0"
+        ],
+        "description": "Add a frame"
+    },
+    "Block": {
+        "prefix": "block",
+        "body": [
+            "\\begin{block}{$1}",
+            "\t\t$2",
+            "\\end{block}",
+            "$0"
+        ],
+        "description": "Add a frame"
+    },
+    "Double Column": {
+        "prefix": "doublecol",
+        "body": [
+            "\\begin{columns}",
+            "\t\\begin{column}{0.5\\textwidth}",
+            "\t\t$1",
+            "\t\\end{column}",
+            "\t\\begin{column}{0.5\\textwidth}",
+            "\t\t$2",
+            "\t\\end{column}",
+            "\\end{columns}",
+            "$0"
+        ],
+        "description": "Add a frame"
+    },
+    "Center": {
+        "prefix": "center",
+        "body": [
+            "\\begin{center}",
+            "\t$1",
+            "\\end{center}",
+            "$0"
+        ],
+        "description": "Center env"
+    }
+}
