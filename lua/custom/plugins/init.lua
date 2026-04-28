@@ -51,4 +51,29 @@ return {
   },
   -- Git commands integrations
   { 'tpope/vim-fugitive' },
+  -- More rust things
+  {
+    'mrcjkb/rustaceanvim',
+    version = '^4', -- Recommended
+    lazy = false, -- This plugin is already lazy
+  },
+  -- tiny code actions, remaped in main config
+  {
+    "rachartier/tiny-code-action.nvim",
+    dependencies = {
+        -- optional picker via telescope
+        {"nvim-telescope/telescope.nvim"},
+        -- optional picker via fzf-lua
+        {"ibhagwan/fzf-lua"},
+        -- .. or via snacks
+        {
+          "folke/snacks.nvim",
+          opts = {
+            terminal = {},
+          }
+        }
+    },
+    event = "LspAttach",
+    opts = {},
+}
 }
