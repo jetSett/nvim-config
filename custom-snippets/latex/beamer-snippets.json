@@ -9,6 +9,16 @@
         ],
         "description": "Add a frame"
     },
+    "Tikz": {
+        "prefix": "tikzpicture",
+        "body": [
+            "\\begin{tikzpicture}",
+            "\t\t$1",
+            "\\end{tikzpicture}",
+            "$0"
+        ],
+        "description": "Add a tikz environment"
+    },
     "Block": {
         "prefix": "block",
         "body": [
